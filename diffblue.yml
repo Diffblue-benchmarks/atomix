@@ -1,0 +1,305 @@
+﻿cbmcArguments:
+  cover-function-only: false
+  depth: false
+  do-not-test-methods-with-access:
+    - private
+  java-generate-no-comments: true
+  no-trivial-tests: true
+  string-non-empty: true
+  string-printable: true
+units:
+  - target:
+    - dir: utils/target/classes
+      file: io/atomix/utils/memory/BufferCleaner.class
+      sourceDir: utils/src/main/java
+      sourceFile: io/atomix/utils/memory/BufferCleaner.java
+  - target:
+    - dir: protocols/log/target/classes
+      file: io/atomix/protocols/log/roles/LeaderRole.class./protocols/raft/target/classes/io/atomix/protocols/raft/roles/LeaderRole.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/roles/LeaderRole.java
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/ClusterMembershipEvent.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/ClusterMembershipEvent.java
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/ClusterMembershipEventListener.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/ClusterMembershipEventListener.java
+    - dir: primitive/target/classes
+      file: io/atomix/primitive/session/SessionId.class
+      sourceDir: primitive/src/main/java
+      sourceFile: io/atomix/primitive/session/SessionId.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/RaftError.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/RaftError.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/RaftException.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/RaftException.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/RaftServer.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/RaftServer.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/cluster/RaftMember.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/cluster/RaftMember.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/cluster/impl/DefaultRaftMember.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/cluster/impl/DefaultRaftMember.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/cluster/impl/RaftMemberContext.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/cluster/impl/RaftMemberContext.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/impl/MetadataResult.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/impl/MetadataResult.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/impl/OperationResult.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/impl/OperationResult.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/impl/PendingCommand.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/impl/PendingCommand.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/impl/RaftContext.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/impl/RaftContext.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/AppendRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/AppendRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/AppendResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/AppendResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/CloseSessionRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/CloseSessionRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/CloseSessionResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/CloseSessionResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/CommandRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/CommandRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/CommandResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/CommandResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/JoinRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/JoinRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/JoinResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/JoinResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/KeepAliveRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/KeepAliveRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/KeepAliveResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/KeepAliveResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/LeaveRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/LeaveRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/LeaveResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/LeaveResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/MetadataRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/MetadataRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/MetadataResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/MetadataResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/OpenSessionRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/OpenSessionRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/OpenSessionResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/OpenSessionResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/PollRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/PollRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/PollResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/PollResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/QueryRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/QueryRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/QueryResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/QueryResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/RaftResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/RaftResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/ReconfigureRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/ReconfigureRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/ReconfigureResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/ReconfigureResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/TransferRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/TransferRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/TransferResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/TransferResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/VoteRequest.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/VoteRequest.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/protocol/VoteResponse.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/protocol/VoteResponse.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/session/RaftSession.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/session/RaftSession.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/log/entry/CloseSessionEntry.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/log/entry/CloseSessionEntry.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/log/entry/CommandEntry.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/log/entry/CommandEntry.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/log/entry/ConfigurationEntry.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/log/entry/ConfigurationEntry.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/log/entry/InitializeEntry.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/log/entry/InitializeEntry.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/log/entry/KeepAliveEntry.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/log/entry/KeepAliveEntry.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/log/entry/MetadataEntry.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/log/entry/MetadataEntry.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/log/entry/OpenSessionEntry.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/log/entry/OpenSessionEntry.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/log/entry/QueryEntry.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/log/entry/QueryEntry.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/log/entry/RaftLogEntry.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/log/entry/RaftLogEntry.java
+    - dir: protocols/raft/target/classes
+      file: io/atomix/protocols/raft/storage/system/Configuration.class
+      sourceDir: protocols/raft/src/main/java
+      sourceFile: io/atomix/protocols/raft/storage/system/Configuration.java
+    - dir: storage/target/classes
+      file: io/atomix/storage/StorageException.class
+      sourceDir: storage/src/main/java
+      sourceFile: io/atomix/storage/StorageException.java
+    - dir: storage/target/classes
+      file: io/atomix/storage/journal/Indexed.class
+      sourceDir: storage/src/main/java
+      sourceFile: io/atomix/storage/journal/Indexed.java
+    - dir: utils/target/classes
+      file: io/atomix/utils/concurrent/Futures.class
+      sourceDir: utils/src/main/java
+      sourceFile: io/atomix/utils/concurrent/Futures.java
+    - dir: utils/target/classes
+      file: io/atomix/utils/concurrent/Scheduled.class
+      sourceDir: utils/src/main/java
+      sourceFile: io/atomix/utils/concurrent/Scheduled.java
+  - target:
+    - dir: utils/target/classes
+      file: io/atomix/utils/concurrent/Retries.class
+      sourceDir: utils/src/main/java
+      sourceFile: io/atomix/utils/concurrent/Retries.java
+  - target:
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/messaging/impl/DefaultClusterCommunicationService.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/messaging/impl/DefaultClusterCommunicationService.java
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/ClusterMembershipService.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/ClusterMembershipService.java
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/Member.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/Member.java
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/MemberId.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/MemberId.java
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/messaging/ClusterCommunicationService.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/messaging/ClusterCommunicationService.java
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/messaging/ManagedClusterCommunicationService.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/messaging/ManagedClusterCommunicationService.java
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/messaging/MessagingService.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/messaging/MessagingService.java
+    - dir: cluster/target/classes
+      file: io/atomix/cluster/messaging/UnicastService.class
+      sourceDir: cluster/src/main/java
+      sourceFile: io/atomix/cluster/messaging/UnicastService.java
+    - dir: utils/target/classes
+      file: io/atomix/utils/net/Address.class
+      sourceDir: utils/src/main/java
+      sourceFile: io/atomix/utils/net/Address.java
+  - target:
+    - dir: utils/target/classes
+      file: io/atomix/utils/serializer/serializers/ImmutableMapSerializer.class
+      sourceDir: utils/src/main/java
+      sourceFile: io/atomix/utils/serializer/serializers/ImmutableMapSerializer.java
+phases:
+  -
+    timeout: 300
+    cbmcArguments: null
+    java-assume-inputs-non-null: true
+    max-nondet-array-length: 10
+    unwind: 1
+  -
+    timeout: 300
+    cbmcArguments: null
+    max-nondet-array-length: 20
+    unwind: 2
+  -
+    timeout: 300
+    cbmcArguments: null
+    max-nondet-array-length: 30
+    max-nondet-string-length: 10
+    unwind: 3
